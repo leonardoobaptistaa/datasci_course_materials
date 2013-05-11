@@ -35,7 +35,7 @@ def main():
             new_scores[word] += text_score
 
     for word in new_scores.keys():
-            print word, float(new_scores[word])
+            print word.encode('utf-8'), float(new_scores[word])
 
 
 if __name__ == '__main__':
